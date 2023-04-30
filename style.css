@@ -7,7 +7,15 @@
     list-style: none;
     scroll-behavior: smooth;
 }
+ 
+@font-face {
+    font-family: 'metropolis1920regular';
+    src: url('metropolis1920-regular-webfont.woff2') format('woff2'),
+         url('metropolis1920-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 font-family: 'Chakra Petch', sans-serif;
 font-family: 'Righteous', cursive;
 font-family: 'Roboto Mono', monospace;
