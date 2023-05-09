@@ -11,7 +11,7 @@
 
 
 .theme {
-    font-family: 'Metropolis1920';
+    font-family: 'Zeyada';
 }
 
 .font {
@@ -284,7 +284,7 @@ header.sticky {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .underline {
@@ -295,7 +295,7 @@ header.sticky {
 .about-img img {
     max-width: 530px;
     height: auto;
-    width: 100%;
+    width: auto;
     border-radius: 8px;
 }
 
@@ -494,16 +494,24 @@ header.sticky {
     transform: scale(1.1);
 }
 
+
 .row:hover .layer {
     height: 100%;
 }
 
 .contact {
     background: var(--second-bg-color);
+    display: flex;
+    flex-direction: column;
+
+}
+.contact-form {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 2.5rem;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        gap: 2.5rem;
+        justify-items: center;
+        align-content: center;
 }
 
 .contact-text h4 {
@@ -564,6 +572,7 @@ header.sticky {
     background: var(--text-color);
     color: var(--main-color);
 }
+
 
 .contact-form form {
     position: relative;
@@ -749,19 +758,27 @@ header.sticky {
         display: grid;
         grid-template-columns: 1fr;
     }
-        .contact-icons a {
-            height: 40px;
-            width: 40px;
-            background: var(--main-color);
-            color: var(--text-color);
-            font-size: 22px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            margin: 0 15px 40px;
-            transition: all .45s ease;
-        }
+    .box-content {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+
+    }
+    .box-content p {
+    }
+    .contact-icons a {
+        height: 40px;
+        width: 40px;
+        background: var(--main-color);
+        color: var(--text-color);
+        font-size: 22px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 0 15px 40px;
+        transition: all .45s ease;
+    }
 }
 
 @media (max-width: 280px) {
